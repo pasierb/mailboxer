@@ -1,4 +1,4 @@
-class Mailboxer::Conversation < ActiveRecord::Base
+class Mailboxer::Conversation < ApplicationRecord #ActiveRecord::Base
   self.table_name = :mailboxer_conversations
 
   attr_accessible :subject if Mailboxer.protected_attributes?
